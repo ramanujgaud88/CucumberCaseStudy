@@ -13,4 +13,10 @@ public class ConduitLoginPage {
 	public ConduitLoginPage (WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
+	
+	public void couditLogin(String emailId, String passWord){
+		emailid.sendKeys(emailId);
+		password.sendKeys(passWord);
+		loginButton.click();
+	}
 }
